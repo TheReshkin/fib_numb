@@ -19,6 +19,7 @@ pipeline {
         stage('Show') {
             steps {
                 sh "cat fibonacci.txt"
+                archiveArtifacts artifacts: 'fibonacci.txt', allowEmptyArchive: true
             }
         }
     }
