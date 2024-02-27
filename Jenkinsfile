@@ -7,7 +7,7 @@ pipeline {
                 echo "Building.."
                 dir('fib_numb'){
                     sh "ls"
-                    sh "/usr/share/maven compile"
+                    sh "mvn compile"
                     sh "ls"
                 }
             }
