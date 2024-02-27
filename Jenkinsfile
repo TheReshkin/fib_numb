@@ -1,7 +1,7 @@
 pipeline {
     agent {
-         label 'мастер'
-      }
+        label 'мастер'
+    }
     stages {
         stage('Build') {
             steps {
@@ -17,7 +17,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh "mvn exec:java -Dexec.mainClass="com.app.Main""
+                sh 'mvn exec:java -Dexec.mainClass="com.app.Main"'
             }
         }
         stage('Show') {
