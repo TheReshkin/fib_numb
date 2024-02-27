@@ -6,6 +6,7 @@ pipeline {
                 git 'https://github.com/TheReshkin/fib_numb.git'
                 echo "Building.."
                 dir('fib_numb'){
+                    sh "pwd"
                     sh "mvn --version"
                     sh "mvn compile"
                     sh "ls"
