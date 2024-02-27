@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
-                sh 'mvn exec:java -Dexec.mainClass="com.app.Main"'
+                sh 'mvn exec:java -Dexec.mainClass="Main"'
             }
         }
         stage('Show') {
