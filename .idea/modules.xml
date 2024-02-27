@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/fib_numb.iml" filepath="$PROJECT_DIR$/fib_numb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fibonacci-calculator.iml" filepath="$PROJECT_DIR$/fibonacci-calculator.iml" />
     </modules>
   </component>
 </project>
