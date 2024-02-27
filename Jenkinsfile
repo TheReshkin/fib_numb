@@ -5,12 +5,9 @@ pipeline {
             steps {
                 git 'https://github.com/TheReshkin/fib_numb.git'
                 echo "Building.."
-                dir('fib_numb'){
-                    sh "ls"
-                    sh "pwd"
-                    sh "mvn --version"
-                    sh "mvn compile"
-                    sh "ls"
+                sh "mvn --version"
+                sh "mvn package"
+                sh "ls"
                 }
             }
         }
