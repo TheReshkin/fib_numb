@@ -8,7 +8,6 @@ pipeline {
                 sh "mvn --version"
                 sh "mvn package"
                 sh "ls"
-                }
             }
         }
         stage('Test') {
