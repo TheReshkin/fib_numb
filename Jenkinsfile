@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/TheReshkin/fib_numb'
+                git 'https://github.com/TheReshkin/fib_numb.git'
                 echo "Building.."
                 dir('fib_numb'){
                     sh "ls"
