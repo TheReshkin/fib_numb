@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/TheReshkin/fib_numb.git'
+
                 echo "Building.."
                 sh "mvn --version"
                 sh "mvn package"
