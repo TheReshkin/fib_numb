@@ -19,7 +19,7 @@ pipeline {
         stage('Show') {
             steps {
                 sh "cat fibonacci.txt"
-                archiveArtifacts artifacts: 'fibonacci.txt', allowEmptyArchive: true
+                archiveArtifacts artifacts: '/target/fibonacci-calculator-1.0-SNAPSHOT.jar', allowEmptyArchive: true
             }
         }
     }
